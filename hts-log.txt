@@ -1,0 +1,15 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 14 Jun 2020 15:37:08 at http://demos.zozotheme.com/construction/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://demos.zozotheme.com/construction/ -O1 "D:\My Web Sites\construction_lp" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:39:03	Error: 	"Not Found" (404) at link demos.zozotheme.com/construction/assets/css/grabbing.png (from demos.zozotheme.com/construction/assets/css/owl.carousel.css)
+15:39:03	Error: 	"Not Found" (404) at link demos.zozotheme.com/construction/assets/css/AjaxLoader.gif (from demos.zozotheme.com/construction/assets/css/owl.theme.default.min.css)
+15:39:03	Error: 	"Not Found" (404) at link demos.zozotheme.com/construction/assets/img/progress-bg.png (from demos.zozotheme.com/construction/assets/css/global.css)
+15:39:03	Error: 	"Not Found" (404) at link demos.zozotheme.com/construction/assets/img/breadcrumb-bg.jpg (from demos.zozotheme.com/construction/assets/css/global.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 55 seconds : 64 links scanned, 59 files written (3390094 bytes overall) [3407230 bytes received at 29628 bytes/sec], 2.2 requests per connection
+(4 errors, 0 warnings, 0 messages)
