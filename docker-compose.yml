@@ -1,0 +1,17 @@
+version: "3"
+services:
+  www:
+    image: nginx
+    restart: always
+    expose:
+      - "80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    environment:
+      - VIRTUAL_HOST=multiservice.apps.com.pe,www.multiservice.apps.com.pe
+      - LETSENCRYPT_HOST=multiservice.apps.com.pe,www.multiservice.apps.com.pe
+      - LETSENCRYPT_EMAIL=kevin.silva.095@gmail.com
+networks:
+  default:
+    external:
+      name: nginx-proxy_default
