@@ -188,7 +188,7 @@
   // Dom Ready Function
   $(document).on("ready", function () {
     // add your functions
-    gMap();
+    // gMap();
     fitnessCarosule();
     counT();
     wowActivator();
