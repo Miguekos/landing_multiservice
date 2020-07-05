@@ -182,7 +182,7 @@
   //Hide Loading Box (Preloader)
   function handlePreloader() {
     if ($(".preloader").length) {
-      $(".preloader").delay(1000).fadeOut(1000);
+      $(".preloader").delay(1).fadeOut(1);
     }
   }
   // Dom Ready Function
