@@ -52,15 +52,16 @@
             <button aria-expanded="false" aria-controls="bs-navbar" data-target="#bs-navbar" data-toggle="collapse"
               type="button" class="navbar-toggle collapsed"> <span class="sr-only">Toggle navigation</span> <span
                 class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-            <a class="navbar-brand col-md-12 col-xs-9" href="#"><img src="assets/img/logo-mr.png" alt="Fitness"></a> </div>
+            <a class="navbar-brand col-md-12 col-xs-9" href="#"><img src="assets/img/logo-mr.png" alt="Fitness"></a>
+          </div>
           <nav class="collapse navbar-collapse pull-right" id="bs-navbar">
             <ul class="nav navbar-nav">
-              <li> <a href="#home"> Principal </a> </li>
-              <li> <a href="#about-us"> Acerca de nosotros </a></li>
-              <li> <a href="#services"> Servicios </a></li>
+              <li> <a href="#home">Principal </a> </li>
+              <li> <a href="#about-us">Nosotros </a></li>
+              <li> <a href="#services">Servicios </a></li>
               <!-- <li> <a href="#whyus"> Quiénes somos </a></li> -->
-              <li> <a href="#team"> Equipo </a></li>
-              <li> <a href="#testimonial"> Testimonios </a></li>
+              <li> <a href="#team">Equipo </a></li>
+              <li> <a href="#testimonial">Testimonios </a></li>
               <li> <a href="#contact-us" class="btn-theme btn"> CONTÁCTANOS </a></li>
             </ul>
           </nav>
@@ -472,8 +473,7 @@
         <div class="items col-xs-12 col-sm-12 col-md-9 text-center wow bounceInLeft" data-wow-duration="0.5s"
           data-wow-delay="0s"> VISÍTANOS EN NUESTRAS <strong> REDES SOCIALES</strong> </div>
         <div class="items col-xs-12 col-sm-12 col-md-3 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s"> <a
-            href="" class="btn btn-theme"><span
-              class="icon icon-Goto "> </span>DIRÍGETE</a></div>
+            href="" class="btn btn-theme"><span class="icon icon-Goto "> </span>DIRÍGETE</a></div>
       </div>
     </div>
     <!-- purchase now end Here -->
@@ -528,6 +528,16 @@
     #about {
       /* background: url('upload/slide/1.jpg') no-repeat scroll center center / cover; */
       background: url('assets/img/banner3.jpg') no-repeat scroll center center / cover;
+    }
+
+    @media screen and (max-width: 700px) {
+      .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 33px 15px;
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
   </style>
 </body>
