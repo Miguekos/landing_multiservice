@@ -15,6 +15,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <!-- responsive stylesheet -->
   <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- <link rel="stylesheet" href="css/typing.css"> -->
 </head>
 <!-- preloader -->
 <div class="preloader"></div>
@@ -76,8 +77,12 @@
               <h1>MR <span class=""></span></h1>
               <span class="grow">Tus proyectos los creamos juntos</span>
             </div>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-              excepte.</p>
+            <h1>
+              <a href="" class="typewrite" data-period="2000"
+                data-type='[ "Seriedad.", "Responsabilidad.", "Calidad.", "Rapidez." ]'>
+                <span class="wrap"></span>
+              </a>
+            </h1>
             <a href="#" target="_blank" class="btn btn-theme">Empezar</a>
           </div>
         </div>
@@ -135,7 +140,8 @@
                 <h1>PROPORCIONANDO PERSONALIZADO Y
                   <br> ALTO SERVICIOS DE CALIDAD.</h1>
               </header>
-              <p> contamos con un equipo de profesionales altamente capacitados y avalados por una trayectoria de más de 10 años en cada una de sus especialidades.</p>
+              <p> contamos con un equipo de profesionales altamente capacitados y avalados por una trayectoria de más de
+                10 años en cada una de sus especialidades.</p>
               <a href="#contact-us" class="btn-theme btn">Ponerse en contacto</a>
             </div>
           </div>
@@ -223,15 +229,18 @@
                   <li> <i class="fa fa-clock-o"></i>RESPUESTA RAPIDA</li>
                   <li><i class="fa fa-university"></i>ENFOQUE PROFESIONAL</li>
                   <li><i class="fa fa-briefcase"></i>TRABAJO RESPONSABLE</li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-xs-12 item">
-                <ul>
                   <li> <i class="fa fa-university"></i>EQUIPO PROFESIONAL</li>
                   <li><i class="fa fa-flash"></i>TRABAJO DE ALTA CALIDAD</li>
                   <li><i class="fa fa-clock-o"></i>EMERGENCIA 24/7</li>
                 </ul>
               </div>
+              <!-- <div class="col-md-6 col-xs-12 item">
+                <ul>
+                  <li> <i class="fa fa-university"></i>EQUIPO PROFESIONAL</li>
+                  <li><i class="fa fa-flash"></i>TRABAJO DE ALTA CALIDAD</li>
+                  <li><i class="fa fa-clock-o"></i>EMERGENCIA 24/7</li>
+                </ul>
+              </div> -->
             </div>
 
           </div>
@@ -507,6 +516,7 @@
   <!--validation form-->
   <script src="assets/js/jquery.form.js"></script>
   <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="js/typing.js"></script>
   <!--end validation form-->
 
   <!--Map js -->
@@ -526,6 +536,82 @@
         padding: 33px 15px;
         font-size: 18px;
         line-height: 20px;
+      }
+
+      .navbar-brand>img {
+        margin-top: -7px;
+        width: 50%;
+      }
+
+      .navbar-nav {
+        margin: 0px 0px 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+      }
+
+      .contact-detail2 li {
+        list-style: outside none none;
+        float: left;
+        padding: 0px 0px;
+        margin-bottom: 0px;
+        margin-right: 35px;
+      }
+
+      .process {
+        background: #1a1268;
+        background-size: cover;
+        padding: 35px 0px;
+        color: #2f363e;
+        border-top: 1px solid #184056;
+        text-align: center;
+      }
+
+      .process .content .col-md-8 {
+        padding-top: 7px;
+        padding-bottom: 20px;
+      }
+
+      section {
+        padding: 60px 0px;
+        text-align: center;
+      }
+
+      .purchase-now .items {
+        font-size: 32px;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .why-us-section .item ul {
+        margin-top: 10px;
+        padding: 0px;
+        text-align: justify;
+        padding-left: 5px;
+      }
+
+      .why-us-section .item-2,
+      .why-us-section .item {
+        padding-top: 30px;
+      }
+
+      #footer>section>div.footer-bottom>div>div.col-md-3 {
+        padding-right: 67px;
+      }
+
+      #about>div>div.col-md-7.col-sm-12.dest-detail.pull-right {
+        text-align: center;
+      }
+    }
+
+
+    }
+
+    @media only screen and (max-width: 767px) {
+      #bs-navbar {
+        width: 120% !important;
       }
     }
   </style>
