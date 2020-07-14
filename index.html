@@ -397,7 +397,7 @@
         <div class="container form-section">
           <div class="row">
             <div class="form col-md-6 contact-form">
-              <form class="form-horizontal" method="post" id="form" novalidate>
+              <form class="form-horizontal" method="post" id="form_selector" novalidate>
                 <div class="form-group">
                   <div class="col-sm-12">
                     <input type="text" class="form-control" name="name" id="name" placeholder="NOMBRE">
@@ -515,6 +515,24 @@
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="js/typing.js"></script>
   <!--end validation form-->
+
+  <script>
+    $("#form_selector").submit(function () {
+        
+        $.ajax({
+          type: "POST",
+          url: "process.php",
+          data: $(this).serialize(),
+          success: function () {
+            console.log("se bebvuo");
+            // $('#myModal').modal();
+            // $("#form_selector")[0].reset();
+            // callback code here
+          }
+        })
+        return false;
+      })
+  </script>
 
   <!--Map js -->
   <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
