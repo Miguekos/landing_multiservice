@@ -36,9 +36,9 @@ $contenido = "nombre: " . $nombresyapellidos . "\nemail: " . $email . "\nsubject
 
 //$recipient = "info@apps.com.pe"; // el mail deseado
 // $recipient = "miguekos1233@gmail.com"; // el mail deseado
-$recipient = "miguel.rodriguez@acceso.com.pe"; // el mail deseado
+$recipient = "larry.ruiz@acceso.com.pe"; // el mail deseado
 $subject = "Nuevo Pedido"; // el titulo del mail
-$mailheaders = "From: MRINNOVA <https://mr.com.pe>"; 
+$mailheaders = "From: MRINNOVA <mr.com.pe>"; 
 // quien lo manda y el dominio
 //$mailheaders .= "Reply-To: ".$email."\n\n"; // responder a: Importante! si quieres que el replay:to funcione tienes
 //que tener en el formulario un field que tiene como nombre "mail".
