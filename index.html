@@ -11,6 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <!-- Bootstrap -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/toastr.min.css" rel="stylesheet" />
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
   <!-- responsive stylesheet -->
@@ -502,7 +503,6 @@
     </section>
   </footer>
 
-  <div id="snackbar">Su correo fue enviado..</div>
   <!-- End footer -->
 
   <script src="assets/js/jquery.min.js"></script>
@@ -514,78 +514,9 @@
   <script src="assets/js/jquery.form.js"></script>
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="js/typing.js"></script>
+  <script src="js/toastr.min.js"></script>
 
-  <style>
-    #snackbar {
-      visibility: hidden;
-      min-width: 250px;
-      margin-left: -125px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      border-radius: 2px;
-      padding: 16px;
-      position: fixed;
-      z-index: 1;
-      left: 50%;
-      bottom: 30px;
-      font-size: 17px;
-    }
 
-    #snackbar.show {
-      visibility: visible;
-      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-      animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    }
-
-    @-webkit-keyframes fadein {
-      from {
-        bottom: 0;
-        opacity: 0;
-      }
-
-      to {
-        bottom: 30px;
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadein {
-      from {
-        bottom: 0;
-        opacity: 0;
-      }
-
-      to {
-        bottom: 30px;
-        opacity: 1;
-      }
-    }
-
-    @-webkit-keyframes fadeout {
-      from {
-        bottom: 30px;
-        opacity: 1;
-      }
-
-      to {
-        bottom: 0;
-        opacity: 0;
-      }
-    }
-
-    @keyframes fadeout {
-      from {
-        bottom: 30px;
-        opacity: 1;
-      }
-
-      to {
-        bottom: 0;
-        opacity: 0;
-      }
-    }
-  </style>
   <!--end validation form-->
 
   <script>
@@ -597,15 +528,12 @@
         data: $(this).serialize(),
         success: function () {
           console.log("se bebvuo");
+          toastr.info('¡Correo enviado correctamente.!')
           // $('#myModal').modal();
-          var x = document.getElementById("snackbar");
-          x.className = "show";
-          setTimeout(function () {
-            x.className = x.className.replace("show", "");
-            $("#form_selector")[0].reset();
-            // callback code here
-          }
-        })
+          $("#form_selector")[0].reset();
+          // callback code here
+        }
+      })
       return false;
     })
   </script>

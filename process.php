@@ -34,7 +34,7 @@ $comentario = $_POST["message"];
 
 $contenido = "nombre: " . $nombresyapellidos . "\nemail: " . $email . "\nsubject: " . $subject . "\ncomentario: " . $comentario;
 
-//$recipient = "info@apps.com.pe"; // el mail deseado
+//$recipient = "informes@mr.com.pe"; // el mail deseado
 // $recipient = "miguekos1233@gmail.com"; // el mail deseado
 $recipient = "larry.ruiz@acceso.com.pe"; // el mail deseado
 $subject = "Nuevo Pedido"; // el titulo del mail
