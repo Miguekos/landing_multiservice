@@ -118,9 +118,7 @@
                 que nuestros clientes se despreocupen y se enfoquen en el desarrollo de su empresa.</p>
               <!-- <a class=" btn btn-theme" href="#">Leer más</a> <a class=" btn btn-theme" href="#">Proyectos</a> -->
             </div>
-            <div class="col-md-6 hidden-xs item"> <img src="assets/img/ferreteria.png" 
-              style="width:70%;"
-              alt=""></div>
+            <div class="col-md-6 hidden-xs item"> <img src="assets/img/ferreteria.png" style="width:70%;" alt=""></div>
           </div>
         </div>
       </section>
@@ -230,7 +228,7 @@
                   <li><i class="fa fa-briefcase"></i>TRABAJO RESPONSABLE</li>
                   <li> <i class="fa fa-university"></i>EQUIPO PROFESIONAL</li>
                   <li><i class="fa fa-flash"></i>ALTA CALIDAD</li>
-                 </ul>
+                </ul>
               </div>
               <!-- <div class="col-md-6 col-xs-12 item">
                 <ul>
@@ -434,14 +432,14 @@
                 <li>
                   <h6>HORARIO</h6>
                   <p>Nuestra servicio de soporte está disponible las 24 horas del día:(+51) 972 714 123<br>
-                    <h6>ATENCIÓN ADMINISTRATIVA</h6>
-                    Lunes-Viernes: 8:00 am a 6:00 pm <br>
-                    Sábado: 8:00 am to 2:00 pm <br>
-                    </p>
+                  <h6>ATENCIÓN ADMINISTRATIVA</h6>
+                  Lunes-Viernes: 8:00 am a 6:00 pm <br>
+                  Sábado: 8:00 am to 2:00 pm <br>
+                  </p>
                 </li>
                 <li>
                   <h6>DIRECCIÓN</h6>
-                  <p>Av. General Vidal 914  tablada de lurin - VMT </p>
+                  <p>Av. General Vidal 914 tablada de lurin - VMT </p>
                 </li>
                 <li>
                   <h6>EMAIL</h6>
@@ -503,6 +501,8 @@
       </div>
     </section>
   </footer>
+
+  <div id="snackbar">Su correo fue enviado..</div>
   <!-- End footer -->
 
   <script src="assets/js/jquery.min.js"></script>
@@ -514,24 +514,100 @@
   <script src="assets/js/jquery.form.js"></script>
   <script src="assets/js/jquery.validate.min.js"></script>
   <script src="js/typing.js"></script>
+
+  <style>
+    #snackbar {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      border-radius: 2px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+      font-size: 17px;
+    }
+
+    #snackbar.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @-webkit-keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadein {
+      from {
+        bottom: 0;
+        opacity: 0;
+      }
+
+      to {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeout {
+      from {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      to {
+        bottom: 0;
+        opacity: 0;
+      }
+    }
+  </style>
   <!--end validation form-->
 
   <script>
     $("#form_selector").submit(function () {
-        
-        $.ajax({
-          type: "POST",
-          url: "process.php",
-          data: $(this).serialize(),
-          success: function () {
-            console.log("se bebvuo");
-            // $('#myModal').modal();
+
+      $.ajax({
+        type: "POST",
+        url: "process.php",
+        data: $(this).serialize(),
+        success: function () {
+          console.log("se bebvuo");
+          // $('#myModal').modal();
+          var x = document.getElementById("snackbar");
+          x.className = "show";
+          setTimeout(function () {
+            x.className = x.className.replace("show", "");
             $("#form_selector")[0].reset();
             // callback code here
           }
         })
-        return false;
-      })
+      return false;
+    })
   </script>
 
   <!--Map js -->
