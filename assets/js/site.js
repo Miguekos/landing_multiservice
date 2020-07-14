@@ -144,13 +144,13 @@
         },
         messages: {
           name: {
-            required: "plese enter your name",
+            required: "Por favor ingresa tu nombre",
           },
           email: {
-            required: "plese enter your email",
+            required: "Por favor ingresa tu correo",
           },
           mobile: {
-            required: "please enter your mobile number",
+            required: "Porfavor ingresa tu teléfono",
             minlength: "10",
           },
         },
