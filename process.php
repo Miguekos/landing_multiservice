@@ -36,7 +36,8 @@ $contenido = "nombre: " . $nombresyapellidos . "\nemail: " . $email . "\nsubject
 
 //$recipient = "informes@mr.com.pe"; // el mail deseado
 // $recipient = "miguekos1233@gmail.com"; // el mail deseado
-$recipient = "larry.ruiz@acceso.com.pe"; // el mail deseado
+// $recipient = "larry.ruiz@acceso.com.pe"; // el mail deseado
+$recipient = "informes@mr.com.pe"; // el mail deseado
 $subject = "Nuevo Pedido"; // el titulo del mail
 $mailheaders = "From: MRINNOVA <mr.com.pe>"; 
 // quien lo manda y el dominio
