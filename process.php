@@ -32,7 +32,7 @@ $comentario = $_POST["message"];
 
 // echo $nombre;
 
-$contenido = "nombre: " . $nombresyapellidos . "\nemail: " . $email . "\nsubject: " . $subject . "\ncomentario: " . $comentario;
+$contenido = "NOMBRE: " . $nombresyapellidos . "\nEMAIL: " . $email . "\nASUNTO: " . $subject . "\nCOMENTARIO: " . $comentario;
 
 //$recipient = "informes@mr.com.pe"; // el mail deseado
 // $recipient = "miguekos1233@gmail.com"; // el mail deseado
