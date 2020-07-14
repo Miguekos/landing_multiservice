@@ -43,8 +43,8 @@ $mailheaders = "From: MientrasMasMejor <https://mientrasmasmejor.com> \n";
 //$mailheaders .= "Reply-To: ".$email."\n\n"; // responder a: Importante! si quieres que el replay:to funcione tienes
 //que tener en el formulario un field que tiene como nombre "mail".
 
-//mail($recipient, $subject, $contenido, $mailheaders);// mandamos el mail con los todos los datos
-mail($recipient, $subject, $contenido); // mandamos el mail con los todos los datos
+mail($recipient, $subject, $contenido, $mailheaders);// mandamos el mail con los todos los datos
+// mail($recipient, $subject, $contenido); // mandamos el mail con los todos los datos
 echo ("ok");
 //header("Location: https://mientrasmasmejor.com"); // y vamos a la pagina en donde nos dan las gracias por haber llenado en formulario
 ?>
