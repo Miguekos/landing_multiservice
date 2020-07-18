@@ -345,24 +345,19 @@
                 <img src="images/testimonio/ISAQ0194.JPG" alt="">
               </div> -->
               <div class="item">
-                <img src="images/testimonio/ISAQ0194.JPG" alt=""
-                style="width:80%;">
+                <img src="images/testimonio/ISAQ0194.JPG" alt="" style="width:80%;">
               </div>
               <div class="item">
-                <img src="images/testimonio/MFSA4136.JPG" alt=""
-                style="width:80%;">
+                <img src="images/testimonio/MFSA4136.JPG" alt="" style="width:80%;">
               </div>
               <div class="item">
-                <img src="images/testimonio/OJKW5696.JPG" alt=""
-                style="width:80%;">
+                <img src="images/testimonio/OJKW5696.JPG" alt="" style="width:80%;">
               </div>
               <div class="item">
-                <img src="images/testimonio/UEDX8536.JPG" alt=""
-                style="width:80%;">
+                <img src="images/testimonio/UEDX8536.JPG" alt="" style="width:80%;">
               </div>
               <div class="item">
-                <img src="images/testimonio/AXUV3404.JPG" alt=""
-                style="width:80%;">
+                <img src="images/testimonio/AXUV3404.JPG" alt="" style="width:80%;">
               </div>
             </div>
           </div>
@@ -466,9 +461,10 @@
       <!-- Contact Section end Here -->
 
       <!-- Map Section Start Here -->
-      <div style="display: none;" class="map">
+      <div class="map">
         <div id="map" style="width:100%; height:500px;"> </div>
       </div>
+      <!-- <div id="map"></div> -->
     </div>
     <!-- Map Section Start Here -->
     <!-- purchase now Start Here -->
@@ -477,7 +473,8 @@
         <div class="items col-xs-12 col-sm-12 col-md-9 text-center wow bounceInLeft" data-wow-duration="0.5s"
           data-wow-delay="0s"> VISÍTANOS EN NUESTRAS <strong> REDES SOCIALES</strong> </div>
         <div class="items col-xs-12 col-sm-12 col-md-3 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0s"> <a
-            href="https://www.facebook.com/MRMANTENIMIENTOYCIVIL/" class="btn btn-theme"><span class="icon icon-Goto "> </span>DIRÍGETE</a></div>
+            href="https://www.facebook.com/MRMANTENIMIENTOYCIVIL/" class="btn btn-theme"><span class="icon icon-Goto ">
+            </span>DIRÍGETE</a></div>
       </div>
     </div>
     <!-- purchase now end Here -->
@@ -547,8 +544,21 @@
   </script>
 
   <!--Map js -->
-  <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript" src="assets/js/jquery.gmap.js"></script> -->
+  <!-- <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -12.196632, lng: -76.9211375 },
+        zoom: 8
+      });
+    }
+  </script> -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg180vuqFBX0etX3PWYVWpRdyTz6QWuyE&callback=initMap">
+  </script>
+
+  <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+  <script type="text/javascript" src="assets/js/jquery.gmap.js"></script>
 
   <style>
     #about {

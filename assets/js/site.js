@@ -1,22 +1,22 @@
 (function ($) {
   "use strict";
   /* Google Map  */
-  // function gMap() {
-  //   if ($("#map").length) {
-  //     var map;
-  //     map = new GMaps({
-  //       div: "#map",
-  //       scrollwheel: false,
-  //       lat: -37.812802,
-  //       lng: 144.956981,
-  //     });
-  //     map.addMarker({
-  //       lat: -37.812802,
-  //       lng: 144.956981,
-  //       title: "Envato HeadQuarter",
-  //     });
-  //   }
-  // }
+  function gMap() {
+    if ($("#map").length) {
+      var map;
+      map = new GMaps({
+        div: "#map",
+        scrollwheel: false,
+        lat: -12.196632,
+        lng: -76.9211375,
+      });
+      map.addMarker({
+        lat: -12.196632,
+        lng: -76.9211375,
+        title: "Envato HeadQuarter",
+      });
+    }
+  }
 
   /* testimonial caroulse */
   function testimonial() {
@@ -188,7 +188,7 @@
   // Dom Ready Function
   $(document).on("ready", function () {
     // add your functions
-    // gMap();
+    gMap();
     fitnessCarosule();
     counT();
     wowActivator();
