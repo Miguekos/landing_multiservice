@@ -13,7 +13,7 @@
       map.addMarker({
         lat: -12.196632,
         lng: -76.9211375,
-        title: "Envato HeadQuarter",
+        title: "MRINNOVA®",
       });
     }
   }
