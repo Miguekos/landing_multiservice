@@ -34,10 +34,10 @@ $comentario = $_POST["message"];
 
 $contenido = "NOMBRE: " . $nombresyapellidos . "\nEMAIL: " . $email . "\nASUNTO: " . $subject . "\nCOMENTARIO: " . $comentario;
 
-//$recipient = "informes@mr.com.pe"; // el mail deseado
+//$recipient = "jcmedina@mr.com.pe"; // el mail deseado
 // $recipient = "miguekos1233@gmail.com"; // el mail deseado
 // $recipient = "larry.ruiz@acceso.com.pe"; // el mail deseado
-$recipient = "informes@mr.com.pe"; // el mail deseado
+$recipient = "jcmedina@mr.com.pe"; // el mail deseado
 $subject = "Nuevo Pedido"; // el titulo del mail
 $mailheaders = "From: MRINNOVA <mr.com.pe>"; 
 // quien lo manda y el dominio
